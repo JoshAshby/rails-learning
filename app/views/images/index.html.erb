@@ -1,0 +1,9 @@
+<h1>i-d0gE</h1>
+
+<%= link_to 'New', new_image_path %>
+
+<ul id="images">
+  <% @images.each do |image| %>
+    <li><%= link_to image.title, image %></li>
+  <% end %>
+</ul>
